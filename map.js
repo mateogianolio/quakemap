@@ -6,56 +6,66 @@
     container: 'map', // container id
     style: window.mapStyle, //stylesheet location
     center: [45, 45], // starting position
-    zoom: 1 // starting zoom
+    zoom: 0 // starting zoom
   });
 
   map.on('load', function () {
+    var date = window.location.search.replace('?', '&');
     map.addSource('quakes', {
       type: 'geojson',
-      data: 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
+      data: 'http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson' + date
     });
 
-    var options = { type: 'circle', source: 'quakes' },
-        alerts = ['green', 'yellow', 'orange', 'red'],
-        alert,
-        mag;
+    var colors = ['green', 'yellow', 'orange', 'red'],
+        options,
+        magnitude,
+        i;
 
-    // magnitude styling
-    for (mag = 0; mag < 10; mag += 2.5) {
-      options.id = 'quakes-' + mag;
+    for (i = 0; i < colors.length; i++) {
+      magnitude = i * 2.5;
+
+      options = { type: 'circle', source: 'quakes' };
+      options.id = 'quake-' + i;
       options.filter = [
         'all',
-        ['>=', 'mag', mag],
-        ['<', 'mag', mag + 2.5]
+        ['>=', 'mag', magnitude],
+        ['<', 'mag', magnitude + 2.5]
       ];
       options.paint = {
-        'circle-radius': 1.75 * mag,
-        'circle-color': alerts[Math.floor(mag / 4)],
-        'circle-opacity': 0.3,
+        'circle-radius': 1.75 * magnitude,
+        'circle-color': colors[Math.floor(magnitude / colors.length)],
+        'circle-opacity': magnitude / 12,
       };
       map.addLayer(options);
     }
 
-    // quake alert styling
-    for (alert = 0; alert < alerts.length; alert++) {
-      options.id = 'quakes-alert-' + alert;
+    for (i = 0; i < colors.length; i++) {
+      options = { type: 'circle', source: 'quakes' };
+      options.id = 'quake-alert-' + i;
       options.filter = [
         'all',
-        ['==', 'alert', alerts[alert]]
+        ['==', 'alert', colors[i]]
       ];
       options.paint = {
-        'circle-radius': 10,
-        'circle-color': alerts[alert],
+        'circle-radius': 0,
+        'circle-color': colors[i],
+        'circle-opacity': 0
       };
       map.addLayer(options);
     }
 
     function animate(time) {
-      var s = time / 1000;
+      var f = Math.sin,
+          abs = Math.abs,
+          t = time / 1000,
+          i;
 
-      for (var i = 0; i < alerts.length; i++) {
-        map.setPaintProperty('quakes-alert-' + i, 'circle-radius', 10 + Math.abs(5 * Math.sin(s)));
-        map.setPaintProperty('quakes-alert-' + i, 'circle-opacity', Math.abs(Math.sin(s)) / 2);
+      if (Math.cos(t) < 0)
+        t += Math.PI;
+
+      for (i = 0; i < colors.length; i++) {
+        map.setPaintProperty('quake-alert-' + i, 'circle-radius', (i + 1) * 5 * (1 + f(t)));
+        map.setPaintProperty('quake-alert-' + i, 'circle-opacity', 1 - f(t));
       }
 
       requestAnimationFrame(animate);
