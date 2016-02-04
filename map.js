@@ -38,7 +38,6 @@
 
     // quake alert styling
     for (alert = 0; alert < alerts.length; alert++) {
-      options.transition = { duration: 0 };
       options.id = 'quakes-alert-' + alert;
       options.filter = [
         'all',
