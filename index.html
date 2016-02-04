@@ -16,25 +16,30 @@
       }
 
       header {
+        position: absolute;
+        font-size: 0.8rem;
         width: 800px;
-        height: 15%;
-        padding: 15px 0;
-        font-size: 0.9rem;
-        margin: 0 auto;
+        padding: 15px;
+        z-index: 999;
       }
 
       #map {
         position: absolute;
         width: 100%;
-        top: 15%;
+        top: 0;
         bottom: 0;
       }
     </style>
   </head>
   <body>
     <header>
-      A map of last week's earthquakes fetched from USGS, colored and scaled by magnitude.
-      Earthquake alerts (green, yellow, orange, red) are represented as animated markers.
+      <h2>QuakeMap</h2>
+
+      A map of last week's earthquakes fetched from USGS, <br>
+      colored and scaled by magnitude.<br>
+      <br>
+      Earthquake alerts (green, yellow, orange, red) are <br>
+      represented as animated markers.
     </header>
     <div id="map"></div>
     <script src="map.js"></script>
