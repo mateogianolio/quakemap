@@ -6,7 +6,6 @@
     container: 'map', // container id
     style: window.mapStyle, //stylesheet location
     center: [45, 45], // starting position
-    interactive: false,
     zoom: 1 // starting zoom
   });
 
