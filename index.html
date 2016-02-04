@@ -4,21 +4,37 @@
   <head>
     <title>QuakeMap</title>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.js'></script>
+    <script src="style.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.css' rel='stylesheet' />
     <style>
       body {
         margin: 0;
         padding: 0;
+        background: #d6d6d6;
+        font: 100%/1.5 'Helvetica Neue', sans-serif;
+      }
+
+      header {
+        width: 800px;
+        height: 15%;
+        padding: 15px 0;
+        font-size: 0.9rem;
+        margin: 0 auto;
       }
 
       #map {
         position: absolute;
         width: 100%;
-        height: 100%;
+        top: 15%;
+        bottom: 0;
       }
     </style>
   </head>
   <body>
+    <header>
+      A map of last week's earthquakes fetched from USGS, colored and scaled by magnitude.
+      Earthquake alerts (green, yellow, orange, red) are represented as animated markers.
+    </header>
     <div id="map"></div>
     <script src="map.js"></script>
   </body>
