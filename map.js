@@ -31,6 +31,7 @@
 
       options = { type: 'circle', source: 'quakes' };
       options.id = 'quake-' + i;
+      options.interactive = true;
       options.filter = [
         'all',
         ['>=', 'mag', magnitude],
@@ -47,7 +48,6 @@
     for (i = 0; i < colors.length; i++) {
       options = { type: 'circle', source: 'quakes' };
       options.id = 'quake-alert-' + i;
-      options.interactive = true;
       options.filter = [
         'all',
         ['==', 'alert', colors[i]]
@@ -83,7 +83,7 @@
       map.featuresAt(event.point, {
         radius: 10,
         includeGeometry: true,
-        layer: ['quake-alert-0', 'quake-alert-1', 'quake-alert-2', 'quake-alert-3']
+        layer: ['quake-0', 'quake-1', 'quake-2', 'quake-3']
       }, function (error, features) {
         map.getCanvas().style.cursor = (!error && features.length) ? 'pointer' : '';
 
