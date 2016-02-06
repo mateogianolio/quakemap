@@ -38,7 +38,7 @@
         ['<', 'mag', magnitude + 2.5]
       ];
       options.paint = {
-        'circle-radius': magnitude < 1 ? 2 : 2 * magnitude,
+        'circle-radius': magnitude < 1 ? 1.5 : 1.5 * magnitude,
         'circle-color': colors[i],
         'circle-opacity': magnitude < 1 ? 0.1 : magnitude / 10,
       };
