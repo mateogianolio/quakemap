@@ -9,6 +9,11 @@
     zoom: 0 // starting zoom
   });
 
+  var popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+  });
+
   map.on('load', function () {
     var date = window.location.search.replace('?', '&');
     map.addSource('quakes', {
@@ -33,7 +38,7 @@
       ];
       options.paint = {
         'circle-radius': 1.75 * magnitude,
-        'circle-color': colors[Math.floor(magnitude / colors.length)],
+        'circle-color': colors[i],
         'circle-opacity': magnitude / 12,
       };
       map.addLayer(options);
@@ -42,6 +47,7 @@
     for (i = 0; i < colors.length; i++) {
       options = { type: 'circle', source: 'quakes' };
       options.id = 'quake-alert-' + i;
+      options.interactive = true;
       options.filter = [
         'all',
         ['==', 'alert', colors[i]]
@@ -72,5 +78,26 @@
     }
 
     animate(0);
+
+    map.on('mousemove', function (event) {
+      map.featuresAt(event.point, {
+        radius: 10,
+        includeGeometry: true,
+        layer: ['quake-alert-0', 'quake-alert-1', 'quake-alert-2', 'quake-alert-3']
+      }, function (error, features) {
+        map.getCanvas().style.cursor = (!error && features.length) ? 'pointer' : '';
+
+        if (error || !features.length) {
+          popup.remove();
+          return;
+        }
+
+        var feature = features[0];
+        popup
+          .setLngLat(feature.geometry.coordinates)
+          .setText(feature.properties.mag)
+          .addTo(map);
+      });
+    });
   });
 }());

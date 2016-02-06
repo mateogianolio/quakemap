@@ -20,13 +20,14 @@
         font: 100%/1.5 'Helvetica Neue', sans-serif;
       }
 
-      header {
+      #info {
         position: absolute;
         font-size: 0.8rem;
-        padding: 0 15px;
+        padding: 0 15px 15px 15px;
         z-index: 999;
         font-size: 11px;
         opacity: 0.5;
+        bottom: 0;
       }
 
       #map {
@@ -35,20 +36,52 @@
         top: 0;
         bottom: 0;
       }
+
+      .mapboxgl-popup-content {
+        background: rgba(255, 255, 255, 0.4);
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      .mapboxgl-popup-tip {
+        opacity: 0.4;
+      }
+
+      .mapboxgl-popup {
+        max-width: 400px;
+        font-size: 12px;
+      }
     </style>
+    <script>
+      function f(stop, duration) {
+        stop = stop || (new Date());
+        var start = new Date(stop - 1000 * 60 * 60 * 24 * duration);
+
+        var end = stop.getFullYear() + '-' + (stop.getMonth() + 1) + '-' + stop.getDate(),
+            begin = start.getFullYear() + '-' + (start.getMonth() + 1) + '-' + start.getDate();
+
+        window.location.href = 'index.html?starttime=' + begin + '&endtime=' + end;
+      }
+    </script>
   </head>
   <body>
-    <header>
+    <div id="info">
       <h3>QuakeMap</h3>
       <p>
-        A map of earthquakes in the world the last 7 days <br>
+        A map of earthquakes in the world the last 30 days <br>
         Fetched from USGS, colored and scaled by magnitude.<br>
       </p>
       <p>
         Earthquake alerts (green, yellow, orange, red) are <br>
         represented as animated markers.
       </p>
-    </header>
+      <p>
+        <a href="#" onclick="f(new Date(), 1)">last 24 hours</a><br>
+        <a href="#" onclick="f(new Date(), 7)">last 7 days</a><br>
+        <a href="#" onclick="f(new Date(), 30)">last 30 days</a><br>
+        <a href="#" onclick="f(new Date('2015-04-26'), 1)">Nepal Earthquake (25 April, 2015)</a>
+      </p>
+    </div>
     <div id="map"></div>
     <script src="map.js"></script>
   </body>
