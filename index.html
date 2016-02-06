@@ -68,16 +68,14 @@
     <div id="info">
       <h3>QuakeMap</h3>
       <p>
-        A map of earthquakes in the world the last 30 days <br>
-        Fetched from USGS, colored and scaled by magnitude.<br>
+        A map of earthquakes in the world the last 24 hours,
+        fetched from USGS and colored and scaled by magnitude.<br>
+        Earthquake alerts (green, yellow, orange, red) are
+        represented as animated markers. Hover alerts to see the reported magnitude.
       </p>
       <p>
-        Earthquake alerts (green, yellow, orange, red) are <br>
-        represented as animated markers.
-      </p>
-      <p>
-        <a href="#" onclick="f(new Date(), 1)">last 24 hours</a><br>
-        <a href="#" onclick="f(new Date(), 7)">last 7 days</a><br>
+        <a href="#" onclick="f(new Date(), 1)">last 24 hours</a> -
+        <a href="#" onclick="f(new Date(), 7)">last 7 days</a> -
         <a href="#" onclick="f(new Date(), 30)">last 30 days</a><br>
         <a href="#" onclick="f(new Date('2015-04-26'), 1)">Nepal Earthquake (25 April, 2015)</a>
       </p>
