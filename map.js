@@ -95,7 +95,7 @@
         var feature = features[0];
         popup
           .setLngLat(feature.geometry.coordinates)
-          .setText(feature.properties.mag)
+          .setHTML('Magnitude: <b>' + feature.properties.mag + '</b><br>Date: <b>' + new Date(feature.properties.time).toLocaleDateString() + '</b>')
           .addTo(map);
       });
     });
