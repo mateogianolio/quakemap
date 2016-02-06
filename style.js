@@ -1,88 +1,95 @@
 window.mapStyle = {
     "version": 8,
-    "name": "Light",
+    "name": "Dark",
     "transition": {
       "duration": 0,
       "delay": 0
     },
     "metadata": {
         "mapbox:groups": {
-            "1444850762048.5845": {
-                "name": "Water labels",
-                "collapsed": true
-            },
-            "1444850923457.5469": {
-                "name": "Water",
-                "collapsed": true
-            },
-            "1444850900520.0022": {
-                "name": "Tunnels",
-                "collapsed": true
-            },
-            "1444850775955.1606": {
-                "name": "POI labels",
-                "collapsed": true
-            },
-            "1444850752066.192": {
-                "name": "Place labels",
-                "collapsed": true
-            },
-            "1444850948248.0754": {
-                "name": "Hillshades",
-                "collapsed": true
-            },
-            "1444850913245.3801": {
+            "1444855829844.9736": {
                 "name": "Aeroways",
                 "collapsed": true
             },
-            "1444850808863.985": {
-                "name": "Road labels",
-                "collapsed": true
-            },
-            "1444850892815.3088": {
-                "name": "Roads",
-                "collapsed": true
-            },
-            "1444850928470.7239": {
-                "name": "Buildings",
-                "collapsed": true
-            },
-            "1444850885718.7302": {
-                "name": "Bridges",
-                "collapsed": true
-            },
-            "1444850963394.812": {
+            "1444855878987.3848": {
                 "name": "Landuses",
                 "collapsed": true
             },
-            "1444850654682.7075": {
-                "name": "Marine labels",
+            "1444855808224.0002": {
+                "name": "Bridges",
                 "collapsed": true
             },
-            "1444850820682.8682": {
-                "name": "Admin boundaries",
+            "1444855728283.4546": {
+                "name": "Place labels",
                 "collapsed": true
             },
-            "1444850621704.1523": {
-                "name": "Country/State labels",
+            "1444855743302.092": {
+                "name": "POI labels",
                 "collapsed": true
             },
-            "1444850874198.7793": {
-                "name": "Shields",
+            "1444855823615.3472": {
+                "name": "Tunnels",
                 "collapsed": true
             },
-            "1444850853666.2222": {
+            "1444855712732.9983": {
+                "name": "State labels",
+                "collapsed": true
+            },
+            "1444855871001.7312": {
+                "name": "Hillshades",
+                "collapsed": true
+            },
+            "1444855787203.2078": {
                 "name": "Waterway labels",
                 "collapsed": true
             },
-            "1444850978189.4492": {
+            "1444855767413.334": {
+                "name": "Road labels",
+                "collapsed": true
+            },
+            "1444855862406.4956": {
+                "name": "Buildings",
+                "collapsed": true
+            },
+            "1444855720231.1272": {
+                "name": "Marine labels",
+                "collapsed": true
+            },
+            "1444855816509.7878": {
+                "name": "Roads",
+                "collapsed": true
+            },
+            "1444855707128.6584": {
+                "name": "Country labels",
+                "collapsed": true
+            },
+            "1444855886145.2253": {
                 "name": "Landcovers",
+                "collapsed": true
+            },
+            "1444855797854.0842": {
+                "name": "Admin boundaries",
+                "collapsed": true
+            },
+            "1444855733376.9668": {
+                "name": "Water labels",
+                "collapsed": true
+            },
+            "1444855857485.0151": {
+                "name": "Water",
                 "collapsed": true
             }
         }
     },
+    "center": [
+        -17.87934832603912,
+        -1.1368683772161603e-13
+    ],
+    "zoom": 1.4008793229149985,
+    "bearing": 0,
+    "pitch": 0,
     "sources": {
-        "mapbox://mapbox.mapbox-streets-v6": {
+        "mapbox": {
             "url": "mapbox://mapbox.mapbox-streets-v6",
             "type": "vector"
         },
@@ -91,17 +98,14 @@ window.mapStyle = {
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/mateogianolio/cik88q3qy00k99um6q4jyofwh",
-    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "sprite": "mapbox://sprites/mateogianolio/cikbappzb006hb8m9mp9ablwi",
+    "glyphs": "mapbox://fonts/mateogianolio/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
             "type": "background",
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "background-color": "#eee"
+                "background-color": "#111"
             },
             "interactive": true
         },
@@ -115,15 +119,12 @@ window.mapStyle = {
                 "class",
                 "snow"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#fff",
+                "fill-color": "#000",
                 "fill-opacity": 0.5
             },
             "metadata": {
-                "mapbox:group": "1444850978189.4492"
+                "mapbox:group": "1444855886145.2253"
             },
             "interactive": true
         },
@@ -137,15 +138,12 @@ window.mapStyle = {
                 "class",
                 "crop"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#ececec",
+                "fill-color": "#131313",
                 "fill-opacity": 0.5
             },
             "metadata": {
-                "mapbox:group": "1444850978189.4492"
+                "mapbox:group": "1444855886145.2253"
             },
             "interactive": true
         },
@@ -159,15 +157,12 @@ window.mapStyle = {
                 "class",
                 "grass"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#e5e5e5",
+                "fill-color": "#1a1a1a",
                 "fill-opacity": 0.5
             },
             "metadata": {
-                "mapbox:group": "1444850978189.4492"
+                "mapbox:group": "1444855886145.2253"
             },
             "interactive": true
         },
@@ -181,15 +176,12 @@ window.mapStyle = {
                 "class",
                 "scrub"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#e3e3e3",
+                "fill-color": "#1c1c1c",
                 "fill-opacity": 0.5
             },
             "metadata": {
-                "mapbox:group": "1444850978189.4492"
+                "mapbox:group": "1444855886145.2253"
             },
             "interactive": true
         },
@@ -203,22 +195,19 @@ window.mapStyle = {
                 "class",
                 "wood"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#dcdcdc",
+                "fill-color": "#232323",
                 "fill-opacity": 0.5
             },
             "metadata": {
-                "mapbox:group": "1444850978189.4492"
+                "mapbox:group": "1444855886145.2253"
             },
             "interactive": true
         },
         {
             "id": "landuse_industrial",
             "type": "fill",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "landuse",
             "filter": [
                 "all",
@@ -233,57 +222,48 @@ window.mapStyle = {
                     "industrial"
                 ]
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#fff",
+                "fill-color": "#000",
                 "fill-opacity": 0.5
             },
             "metadata": {
-                "mapbox:group": "1444850963394.812"
+                "mapbox:group": "1444855878987.3848"
             },
             "interactive": true
         },
         {
             "id": "landuse_park",
             "type": "fill",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "landuse",
             "filter": [
                 "==",
                 "class",
                 "park"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#e4e4e4"
+                "fill-color": "#1b1b1b"
             },
             "metadata": {
-                "mapbox:group": "1444850963394.812"
+                "mapbox:group": "1444855878987.3848"
             },
             "interactive": true
         },
         {
             "id": "landuse_wood",
             "type": "fill",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "landuse",
             "filter": [
                 "==",
                 "class",
                 "wood"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#e0e0e0"
+                "fill-color": "#1f1f1f"
             },
             "metadata": {
-                "mapbox:group": "1444850963394.812"
+                "mapbox:group": "1444855878987.3848"
             },
             "interactive": true
         },
@@ -297,11 +277,8 @@ window.mapStyle = {
                 "level",
                 94
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#fff",
+                "fill-color": "#000",
                 "fill-opacity": {
                     "base": 1,
                     "stops": [
@@ -317,7 +294,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850948248.0754"
+                "mapbox:group": "1444855871001.7312"
             },
             "interactive": true
         },
@@ -331,11 +308,8 @@ window.mapStyle = {
                 "level",
                 90
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#fff",
+                "fill-color": "#000",
                 "fill-opacity": {
                     "base": 1,
                     "stops": [
@@ -351,7 +325,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850948248.0754"
+                "mapbox:group": "1444855871001.7312"
             },
             "interactive": true
         },
@@ -365,11 +339,8 @@ window.mapStyle = {
                 "level",
                 89
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#666",
+                "fill-color": "#999999",
                 "fill-opacity": {
                     "base": 1,
                     "stops": [
@@ -385,7 +356,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850948248.0754"
+                "mapbox:group": "1444855871001.7312"
             },
             "interactive": true
         },
@@ -399,11 +370,8 @@ window.mapStyle = {
                 "level",
                 78
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#666",
+                "fill-color": "#999999",
                 "fill-opacity": {
                     "base": 1,
                     "stops": [
@@ -419,7 +387,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850948248.0754"
+                "mapbox:group": "1444855871001.7312"
             },
             "interactive": true
         },
@@ -433,9 +401,6 @@ window.mapStyle = {
                 "level",
                 67
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
                 "fill-color": "#888888",
                 "fill-opacity": {
@@ -453,7 +418,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850948248.0754"
+                "mapbox:group": "1444855871001.7312"
             },
             "interactive": true
         },
@@ -467,9 +432,6 @@ window.mapStyle = {
                 "level",
                 56
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
                 "fill-color": "#999",
                 "fill-opacity": {
@@ -487,18 +449,18 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850948248.0754"
+                "mapbox:group": "1444855871001.7312"
             },
             "interactive": true
         },
         {
             "id": "building",
             "type": "fill",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "building",
             "minzoom": 15,
             "paint": {
-                "fill-outline-color": "#c0c0c0",
+                "fill-outline-color": "#444444",
                 "fill-opacity": {
                     "base": 1,
                     "stops": [
@@ -513,17 +475,17 @@ window.mapStyle = {
                     ]
                 },
                 "fill-antialias": true,
-                "fill-color": "#cbcbcb"
+                "fill-color": "#383838"
             },
             "metadata": {
-                "mapbox:group": "1444850928470.7239"
+                "mapbox:group": "1444855862406.4956"
             },
             "interactive": true
         },
         {
             "id": "waterway",
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "waterway",
             "filter": [
                 "all",
@@ -540,7 +502,7 @@ window.mapStyle = {
                 ]
             ],
             "paint": {
-                "line-color": "#d6d6d6",
+                "line-color": "#2c2c2c",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -556,14 +518,14 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850923457.5469"
+                "mapbox:group": "1444855857485.0151"
             },
             "interactive": true
         },
         {
             "id": "waterway_stream",
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "waterway",
             "filter": [
                 "all",
@@ -579,7 +541,7 @@ window.mapStyle = {
                 ]
             ],
             "paint": {
-                "line-color": "#d6d6d6",
+                "line-color": "#2c2c2c",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -595,31 +557,32 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850923457.5469"
+                "mapbox:group": "1444855857485.0151"
             },
             "interactive": true
         },
         {
             "id": "water",
             "type": "fill",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "water",
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "fill-color": "#d6d6d6"
+                "fill-color": "#2c2c2c"
             },
             "metadata": {
-                "mapbox:group": "1444850923457.5469"
+                "mapbox:group": "1444855857485.0151"
             },
             "interactive": true
         },
         {
-            "id": "aeroway_runway",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "aeroway",
+            "interactive": true,
+            "layout": {
+                "line-join": "miter",
+                "visibility": "visible"
+            },
+            "metadata": {
+                "mapbox:group": "1444855829844.9736"
+            },
             "filter": [
                 "all",
                 [
@@ -633,10 +596,9 @@ window.mapStyle = {
                     "runway"
                 ]
             ],
-            "layout": {
-                "line-join": "miter",
-                "visibility": "visible"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "aeroway_runway",
             "paint": {
                 "line-width": {
                     "base": 1.15,
@@ -651,7 +613,7 @@ window.mapStyle = {
                         ]
                     ]
                 },
-                "line-color": "#fff",
+                "line-color": "#000",
                 "line-opacity": {
                     "base": 1,
                     "stops": [
@@ -666,16 +628,16 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850913245.3801"
-            },
-            "interactive": true
+            "source-layer": "aeroway"
         },
         {
-            "id": "aeroway_taxiway",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "aeroway",
+            "interactive": true,
+            "layout": {
+                "line-join": "miter"
+            },
+            "metadata": {
+                "mapbox:group": "1444855829844.9736"
+            },
             "filter": [
                 "all",
                 [
@@ -689,9 +651,9 @@ window.mapStyle = {
                     "taxiway"
                 ]
             ],
-            "layout": {
-                "line-join": "miter"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "aeroway_taxiway",
             "paint": {
                 "line-width": {
                     "base": 1.15,
@@ -710,17 +672,14 @@ window.mapStyle = {
                         ]
                     ]
                 },
-                "line-color": "#fff"
+                "line-color": "#3c3c3c"
             },
-            "metadata": {
-                "mapbox:group": "1444850913245.3801"
-            },
-            "interactive": true
+            "source-layer": "aeroway"
         },
         {
             "id": "tunnel_minor",
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "tunnel",
             "filter": [
                 "all",
@@ -741,7 +700,7 @@ window.mapStyle = {
                 ]
             ],
             "paint": {
-                "line-color": "#efefef",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.55,
                     "stops": [
@@ -761,14 +720,14 @@ window.mapStyle = {
                 ]
             },
             "metadata": {
-                "mapbox:group": "1444850900520.0022"
+                "mapbox:group": "1444855823615.3472"
             },
             "interactive": true
         },
         {
             "id": "tunnel_major",
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "tunnel",
             "filter": [
                 "all",
@@ -785,7 +744,7 @@ window.mapStyle = {
                 ]
             ],
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.4,
                     "stops": [
@@ -805,25 +764,22 @@ window.mapStyle = {
                 ]
             },
             "metadata": {
-                "mapbox:group": "1444850900520.0022"
+                "mapbox:group": "1444855823615.3472"
             },
             "interactive": true
         },
         {
             "id": "road-path",
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "road",
             "filter": [
                 "==",
                 "class",
                 "path"
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -839,15 +795,17 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850892815.3088"
+                "mapbox:group": "1444855816509.7878"
             },
             "interactive": true
         },
         {
-            "id": "road-street-low-zoom",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
+            "interactive": true,
+            "minzoom": 11,
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
+            "maxzoom": 14.1,
             "filter": [
                 "all",
                 [
@@ -862,13 +820,11 @@ window.mapStyle = {
                     "street_limited"
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-street-low-zoom",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -900,29 +856,29 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
-            "id": "road-service-driveway",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
             "filter": [
                 "in",
                 "class",
                 "service",
                 "driveway"
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-service-driveway",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -937,28 +893,28 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
-            "id": "road-motorway_link",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "class",
-                "motorway_link"
-            ],
+            "interactive": true,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
+            "filter": [
+                "==",
+                "class",
+                "motorway_link"
+            ],
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-motorway_link",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -977,16 +933,18 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
-            "id": "road-street_limited",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
             "filter": [
                 "all",
                 [
@@ -1000,13 +958,11 @@ window.mapStyle = {
                     "street_limited"
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-street_limited",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1025,12 +981,10 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
+            "interactive": true,
             "minzoom": 14,
             "layout": {
                 "line-cap": "round",
@@ -1038,7 +992,7 @@ window.mapStyle = {
                 "visibility": "visible"
             },
             "metadata": {
-                "mapbox:group": "1444850892815.3088"
+                "mapbox:group": "1444855816509.7878"
             },
             "filter": [
                 "all",
@@ -1054,10 +1008,10 @@ window.mapStyle = {
                 ]
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "road-street",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1077,14 +1031,18 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "road",
-            "interactive": true
+            "source-layer": "road"
         },
         {
-            "id": "road-main",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
+            "interactive": true,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round",
+                "visibility": "visible"
+            },
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
             "filter": [
                 "all",
                 [
@@ -1098,13 +1056,11 @@ window.mapStyle = {
                     "main"
                 ]
             ],
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-main",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1132,16 +1088,18 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
-            "id": "road-trunk",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
+            "interactive": true,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round",
+                "visibility": "visible"
+            },
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
             "filter": [
                 "all",
                 [
@@ -1155,13 +1113,11 @@ window.mapStyle = {
                     "trunk"
                 ]
             ],
-            "layout": {
-                "line-cap": "round",
-                "line-join": "round",
-                "visibility": "visible"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-trunk",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1177,28 +1133,28 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
-            "id": "road-motorway",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road",
-            "filter": [
-                "==",
-                "class",
-                "motorway"
-            ],
+            "interactive": true,
             "layout": {
                 "line-cap": "round",
                 "line-join": "round",
                 "visibility": "visible"
             },
+            "metadata": {
+                "mapbox:group": "1444855816509.7878"
+            },
+            "filter": [
+                "==",
+                "class",
+                "motorway"
+            ],
+            "type": "line",
+            "source": "mapbox",
+            "id": "road-motorway",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1226,12 +1182,10 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850892815.3088"
-            },
-            "interactive": true
+            "source-layer": "road"
         },
         {
+            "interactive": true,
             "minzoom": 13,
             "layout": {
                 "line-cap": "round",
@@ -1239,7 +1193,7 @@ window.mapStyle = {
                 "visibility": "visible"
             },
             "metadata": {
-                "mapbox:group": "1444850892815.3088"
+                "mapbox:group": "1444855816509.7878"
             },
             "filter": [
                 "in",
@@ -1248,10 +1202,10 @@ window.mapStyle = {
                 "minor_rail"
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "road-rail",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1267,10 +1221,10 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "road",
-            "interactive": true
+            "source-layer": "road"
         },
         {
+            "interactive": true,
             "minzoom": 13,
             "layout": {
                 "line-cap": "butt",
@@ -1278,7 +1232,7 @@ window.mapStyle = {
                 "visibility": "visible"
             },
             "metadata": {
-                "mapbox:group": "1444850892815.3088"
+                "mapbox:group": "1444855816509.7878"
             },
             "filter": [
                 "in",
@@ -1287,10 +1241,10 @@ window.mapStyle = {
                 "minor_rail"
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "road-rail-tracks",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1306,13 +1260,12 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "road",
-            "interactive": true
+            "source-layer": "road"
         },
         {
             "id": "bridge_minor_case",
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "source-layer": "bridge",
             "filter": [
                 "all",
@@ -1333,7 +1286,7 @@ window.mapStyle = {
                 ]
             ],
             "paint": {
-                "line-color": "#eee",
+                "line-color": "#111",
                 "line-width": {
                     "base": 1.6,
                     "stops": [
@@ -1362,27 +1315,30 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "interactive": true
         },
         {
-            "id": "bridge-path",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "bridge",
-            "filter": [
-                "==",
-                "class",
-                "path"
-            ],
+            "interactive": true,
             "layout": {
                 "visibility": "visible",
                 "line-cap": "round",
                 "line-join": "round"
             },
+            "metadata": {
+                "mapbox:group": "1444855808224.0002"
+            },
+            "filter": [
+                "==",
+                "class",
+                "path"
+            ],
+            "type": "line",
+            "source": "mapbox",
+            "id": "bridge-path",
             "paint": {
-                "line-color": "#efefef",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1397,12 +1353,10 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850885718.7302"
-            },
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 11,
             "layout": {
                 "visibility": "visible",
@@ -1410,7 +1364,7 @@ window.mapStyle = {
                 "line-join": "round"
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "maxzoom": 14.1,
             "filter": [
@@ -1428,10 +1382,10 @@ window.mapStyle = {
                 ]
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-street-low-zoom",
             "paint": {
-                "line-color": "#efefef",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1463,10 +1417,10 @@ window.mapStyle = {
                     ]
                 }
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 10,
             "layout": {
                 "visibility": "visible",
@@ -1474,7 +1428,7 @@ window.mapStyle = {
                 "line-join": "round"
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "filter": [
                 "all",
@@ -1490,10 +1444,10 @@ window.mapStyle = {
                 ]
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-motorway_link",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1513,10 +1467,10 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 14,
             "layout": {
                 "visibility": "visible",
@@ -1524,7 +1478,7 @@ window.mapStyle = {
                 "line-join": "round"
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "filter": [
                 "all",
@@ -1540,10 +1494,10 @@ window.mapStyle = {
                 ]
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-street_limited",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1563,10 +1517,10 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 14,
             "layout": {
                 "visibility": "visible",
@@ -1574,7 +1528,7 @@ window.mapStyle = {
                 "line-join": "round"
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "filter": [
                 "==",
@@ -1582,10 +1536,10 @@ window.mapStyle = {
                 "street"
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-street",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1605,14 +1559,18 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge-main",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "bridge",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444855808224.0002"
+            },
             "filter": [
                 "all",
                 [
@@ -1626,13 +1584,11 @@ window.mapStyle = {
                     "trunk"
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "bridge-main",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1660,16 +1616,18 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850885718.7302"
-            },
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge-trunk",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "bridge",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444855808224.0002"
+            },
             "filter": [
                 "all",
                 [
@@ -1683,13 +1641,11 @@ window.mapStyle = {
                     "trunk"
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "bridge-trunk",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -1709,28 +1665,28 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444850885718.7302"
-            },
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
-            "id": "bridge-motorway",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "bridge",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "metadata": {
+                "mapbox:group": "1444855808224.0002"
+            },
             "filter": [
                 "==",
                 "class",
                 "motorway"
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-cap": "round",
-                "line-join": "round"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "bridge-motorway",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -1750,12 +1706,10 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "metadata": {
-                "mapbox:group": "1444850885718.7302"
-            },
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 13,
             "layout": {
                 "visibility": "visible",
@@ -1764,7 +1718,7 @@ window.mapStyle = {
                 "line-round-limit": 2
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "filter": [
                 "in",
@@ -1773,10 +1727,10 @@ window.mapStyle = {
                 "minor_rail"
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-rail",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1792,10 +1746,10 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 14,
             "layout": {
                 "visibility": "visible",
@@ -1804,7 +1758,7 @@ window.mapStyle = {
                 "line-round-limit": 2
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "filter": [
                 "in",
@@ -1813,10 +1767,10 @@ window.mapStyle = {
                 "minor_rail"
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-rail-tracks",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1832,10 +1786,10 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
+            "interactive": true,
             "minzoom": 14,
             "layout": {
                 "visibility": "visible",
@@ -1844,7 +1798,7 @@ window.mapStyle = {
                 "line-round-limit": 2
             },
             "metadata": {
-                "mapbox:group": "1444850885718.7302"
+                "mapbox:group": "1444855808224.0002"
             },
             "filter": [
                 "==",
@@ -1852,10 +1806,10 @@ window.mapStyle = {
                 "aerialway"
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "bridge-rail-tracks_copy",
             "paint": {
-                "line-color": "#fff",
+                "line-color": "#484848",
                 "line-width": {
                     "base": 1.5,
                     "stops": [
@@ -1871,14 +1825,17 @@ window.mapStyle = {
                 },
                 "line-opacity": 1
             },
-            "source-layer": "bridge",
-            "interactive": true
+            "source-layer": "bridge"
         },
         {
-            "id": "admin-3-4-boundaries-bg",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "admin",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-join": "bevel"
+            },
+            "metadata": {
+                "mapbox:group": "1444855797854.0842"
+            },
             "filter": [
                 "all",
                 [
@@ -1892,10 +1849,9 @@ window.mapStyle = {
                     0
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-join": "bevel"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "admin-3-4-boundaries-bg",
             "paint": {
                 "line-width": {
                     "base": 1,
@@ -1910,31 +1866,20 @@ window.mapStyle = {
                         ]
                     ]
                 },
-                "line-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            2,
-                            0
-                        ],
-                        [
-                            5,
-                            0.75
-                        ]
-                    ]
-                },
-                "line-color": "#fff"
+                "line-opacity": 0.2,
+                "line-color": "#000"
             },
-            "metadata": {
-                "mapbox:group": "1444850820682.8682"
-            },
-            "interactive": true
+            "source-layer": "admin"
         },
         {
-            "id": "admin-2-boundaries-bg",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "admin",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-join": "miter"
+            },
+            "metadata": {
+                "mapbox:group": "1444855797854.0842"
+            },
             "filter": [
                 "all",
                 [
@@ -1953,25 +1898,12 @@ window.mapStyle = {
                     2
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-join": "miter"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "admin-2-boundaries-bg",
             "paint": {
-                "line-color": "#fff",
-                "line-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            3,
-                            0
-                        ],
-                        [
-                            4,
-                            0.75
-                        ]
-                    ]
-                },
+                "line-color": "#000000",
+                "line-opacity": 0.2,
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -1986,16 +1918,17 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850820682.8682"
-            },
-            "interactive": true
+            "source-layer": "admin"
         },
         {
-            "id": "admin-3-4-boundaries",
-            "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "admin",
+            "interactive": true,
+            "layout": {
+                "visibility": "visible",
+                "line-join": "miter"
+            },
+            "metadata": {
+                "mapbox:group": "1444855797854.0842"
+            },
             "filter": [
                 "all",
                 [
@@ -2009,25 +1942,12 @@ window.mapStyle = {
                     0
                 ]
             ],
-            "layout": {
-                "visibility": "visible",
-                "line-join": "miter"
-            },
+            "type": "line",
+            "source": "mapbox",
+            "id": "admin-3-4-boundaries",
             "paint": {
-                "line-color": "#b5b5b5",
-                "line-opacity": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            2,
-                            0
-                        ],
-                        [
-                            3,
-                            1
-                        ]
-                    ]
-                },
+                "line-color": "#797979",
+                "line-opacity": 0.2,
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -2063,12 +1983,10 @@ window.mapStyle = {
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850820682.8682"
-            },
-            "interactive": true
+            "source-layer": "admin"
         },
         {
+            "interactive": true,
             "minzoom": 1,
             "layout": {
                 "visibility": "visible",
@@ -2076,7 +1994,7 @@ window.mapStyle = {
                 "line-cap": "round"
             },
             "metadata": {
-                "mapbox:group": "1444850820682.8682"
+                "mapbox:group": "1444855797854.0842"
             },
             "filter": [
                 "all",
@@ -2097,11 +2015,11 @@ window.mapStyle = {
                 ]
             ],
             "type": "line",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "admin-2-boundaries",
             "paint": {
-                "line-color": "#c0c0c0",
-                "line-opacity": 1,
+                "line-color": "#5f5f5f",
+                "line-opacity": 0.2,
                 "line-width": {
                     "base": 1,
                     "stops": [
@@ -2116,80 +2034,10 @@ window.mapStyle = {
                     ]
                 }
             },
-            "source-layer": "admin",
-            "interactive": true
+            "source-layer": "admin"
         },
         {
-            "id": "interstate-motorway_shields",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "shield",
-                    "us-interstate",
-                    "us-interstate-business",
-                    "us-interstate-duplex"
-                ],
-                [
-                    "<=",
-                    "reflen",
-                    6
-                ]
-            ],
-            "layout": {
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            15.95,
-                            9
-                        ],
-                        [
-                            16,
-                            11
-                        ]
-                    ]
-                },
-                "icon-image": "default-4-small",
-                "text-max-angle": 38,
-                "symbol-spacing": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            10,
-                            200
-                        ],
-                        [
-                            15,
-                            600
-                        ]
-                    ]
-                },
-                "text-font": [
-                    "DIN Offc Pro Bold",
-                    "Arial Unicode MS Regular"
-                ],
-                "symbol-placement": "line",
-                "visibility": "none",
-                "text-field": "{ref}",
-                "text-letter-spacing": 0.05
-            },
-            "paint": {
-                "text-color": "#929292",
-                "text-halo-color": "#fff",
-                "icon-color": "white",
-                "icon-halo-width": 1,
-                "icon-halo-color": "rgba(0, 0, 0, 1)"
-            },
-            "metadata": {
-                "mapbox:group": "1444850874198.7793"
-            },
-            "interactive": true
-        },
-        {
+            "interactive": true,
             "minzoom": 12,
             "layout": {
                 "text-font": [
@@ -2214,7 +2062,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850853666.2222"
+                "mapbox:group": "1444855787203.2078"
             },
             "filter": [
                 "==",
@@ -2222,15 +2070,32 @@ window.mapStyle = {
                 "river"
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "waterway-label",
             "paint": {
-                "text-color": "#929292"
+                "text-color": "#929292",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "waterway_label",
-            "interactive": true
+            "source-layer": "waterway_label"
         },
         {
+            "interactive": true,
             "minzoom": 12,
             "layout": {
                 "symbol-placement": "line",
@@ -2257,7 +2122,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850808863.985"
+                "mapbox:group": "1444855767413.334"
             },
             "filter": [
                 "all",
@@ -2276,27 +2141,34 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "road-label-sm",
             "paint": {
-                "text-halo-color": "#fff",
+                "text-halo-color": "#000",
                 "text-halo-width": 2,
-                "text-color": "#929292"
+                "text-color": "#929292",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "road_label",
-            "interactive": true
+            "source-layer": "road_label"
         },
         {
-            "id": "road-label-med",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road_label",
-            "filter": [
-                "in",
-                "class",
-                "street",
-                "street_limited"
-            ],
+            "interactive": true,
             "layout": {
                 "symbol-placement": "line",
                 "text-field": "{name_en}",
@@ -2321,27 +2193,44 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-halo-color": "#fff",
-                "text-halo-width": 2,
-                "text-color": "#929292"
-            },
             "metadata": {
-                "mapbox:group": "1444850808863.985"
+                "mapbox:group": "1444855767413.334"
             },
-            "interactive": true
-        },
-        {
-            "id": "road-label-large",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "road_label",
             "filter": [
                 "in",
                 "class",
-                "motorway",
-                "main"
+                "street",
+                "street_limited"
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "road-label-med",
+            "paint": {
+                "text-halo-color": "#000",
+                "text-halo-width": 2,
+                "text-color": "#929292",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "road_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "symbol-placement": "line",
                 "text-field": "{name_en}",
@@ -2366,36 +2255,44 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-halo-color": "#fff",
-                "text-halo-width": 2,
-                "text-color": "#929292"
-            },
             "metadata": {
-                "mapbox:group": "1444850808863.985"
+                "mapbox:group": "1444855767413.334"
             },
-            "interactive": true
+            "filter": [
+                "in",
+                "class",
+                "motorway",
+                "main"
+            ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "road-label-large",
+            "paint": {
+                "text-halo-color": "#000",
+                "text-halo-width": 2,
+                "text-color": "#929292",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "road_label"
         },
         {
-            "id": "airport-label",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "poi_label",
-            "filter": [
-                "all",
-                [
-                    "in",
-                    "maki",
-                    "airport",
-                    "heliport",
-                    "rocket"
-                ],
-                [
-                    "<=",
-                    "scalerank",
-                    2
-                ]
-            ],
+            "interactive": true,
             "layout": {
                 "text-font": [
                     "DIN Offc Pro Medium",
@@ -2406,12 +2303,12 @@ window.mapStyle = {
                     "base": 1,
                     "stops": [
                         [
-                            12,
-                            ""
+                            10,
+                            "{name_en}"
                         ],
                         [
                             13,
-                            "{name_en}"
+                            ""
                         ]
                     ]
                 },
@@ -2430,35 +2327,54 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
-                "text-halo-width": 1,
-                "text-halo-blur": 0
-            },
             "metadata": {
-                "mapbox:group": "1444850775955.1606"
+                "mapbox:group": "1444855743302.092"
             },
-            "interactive": true
-        },
-        {
-            "id": "poi-parks-scalerank1",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "poi_label",
             "filter": [
                 "all",
                 [
-                    "==",
+                    "in",
                     "maki",
-                    "park"
+                    "airport",
+                    "heliport",
+                    "rocket"
                 ],
                 [
                     "<=",
                     "scalerank",
-                    1
+                    2
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "airport-label",
+            "paint": {
+                "text-color": "#999999",
+                "text-halo-color": "#000",
+                "text-halo-width": 1,
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "poi_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 8,
                 "visibility": "visible",
@@ -2481,21 +2397,76 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#4f4f4f",
-                "text-halo-color": "#fff",
-                "text-halo-width": 1
-            },
             "metadata": {
-                "mapbox:group": "1444850775955.1606"
+                "mapbox:group": "1444855743302.092"
             },
-            "interactive": true
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "scalerank",
+                    1
+                ],
+                [
+                    "==",
+                    "maki",
+                    "park"
+                ]
+            ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "poi-parks-scalerank1",
+            "paint": {
+                "text-color": "#c2c2c2",
+                "text-halo-color": "#000",
+                "text-halo-width": 1,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "poi_label"
         },
         {
-            "id": "poi-scalerank1",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "poi_label",
+            "interactive": true,
+            "layout": {
+                "text-max-width": 8,
+                "visibility": "visible",
+                "text-field": "{name_en}",
+                "text-font": [
+                    "DIN Offc Pro Regular",
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            10,
+                            10
+                        ],
+                        [
+                            18,
+                            14
+                        ]
+                    ]
+                }
+            },
+            "metadata": {
+                "mapbox:group": "1444855743302.092"
+            },
             "filter": [
                 "all",
                 [
@@ -2522,43 +2493,35 @@ window.mapStyle = {
                     1
                 ]
             ],
-            "layout": {
-                "text-max-width": 8,
-                "visibility": "visible",
-                "text-field": "{name_en}",
-                "text-font": [
-                    "DIN Offc Pro Regular",
-                    "Arial Unicode MS Regular"
-                ],
-                "text-size": {
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "poi-scalerank1",
+            "paint": {
+                "text-color": "#b7b8b7",
+                "text-halo-color": "#000",
+                "text-halo-width": 1,
+                "text-opacity": {
                     "base": 1,
                     "stops": [
                         [
-                            10,
-                            10
+                            3,
+                            0
                         ],
                         [
-                            18,
-                            14
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
                         ]
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#5a5a5a",
-                "text-halo-color": "#fff",
-                "text-halo-width": 1
-            },
-            "metadata": {
-                "mapbox:group": "1444850775955.1606"
-            },
-            "interactive": true
+            "source-layer": "poi_label"
         },
         {
-            "id": "water-label",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "water_label",
+            "interactive": true,
             "minzoom": 5,
             "layout": {
                 "text-font": [
@@ -2582,27 +2545,48 @@ window.mapStyle = {
                     ]
                 }
             },
+            "metadata": {
+                "mapbox:group": "1444855733376.9668"
+            },
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "water-label",
             "paint": {
                 "text-color": {
                     "base": 1,
                     "stops": [
                         [
                             0,
-                            "#929292"
+                            "#969696"
                         ],
                         [
                             20,
-                            "#929292"
+                            "#969696"
+                        ]
+                    ]
+                },
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
                         ]
                     ]
                 }
             },
-            "metadata": {
-                "mapbox:group": "1444850762048.5845"
-            },
-            "interactive": true
+            "source-layer": "water_label"
         },
         {
+            "interactive": true,
             "minzoom": 12,
             "layout": {
                 "text-field": "{name_en}",
@@ -2627,7 +2611,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "filter": [
                 "all",
@@ -2644,23 +2628,23 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_neighborhood",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1,
                 "text-halo-blur": 1,
                 "text-opacity": {
                     "base": 1,
                     "stops": [
                         [
-                            0,
+                            3,
                             0
                         ],
                         [
-                            12,
-                            0.66
+                            6,
+                            1
                         ],
                         [
                             13,
@@ -2669,15 +2653,15 @@ window.mapStyle = {
                     ]
                 }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "minzoom": 8,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
-                    "DIN Offc Pro Regular",
+                    "DIN Offc Pro Medium",
                     "Arial Unicode MS Bold"
                 ],
                 "text-max-width": 15,
@@ -2695,7 +2679,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "filter": [
                 "all",
@@ -2713,18 +2697,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_other",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1,
-                "text-halo-blur": 1
+                "text-halo-blur": 1,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -2778,7 +2779,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "maxzoom": 16,
             "filter": [
@@ -2803,18 +2804,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_city_small_s",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1.5,
-                "text-halo-blur": 0
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -2868,7 +2886,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "maxzoom": 16,
             "filter": [
@@ -2893,18 +2911,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_city_small_n",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1.5,
-                "text-halo-blur": 0
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -2959,7 +2994,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "maxzoom": 16,
             "filter": [
@@ -2989,18 +3024,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_city_medium_s",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1.5,
-                "text-halo-blur": 0
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -3055,7 +3107,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "maxzoom": 16,
             "filter": [
@@ -3085,18 +3137,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_city_medium_n",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1.5,
-                "text-halo-blur": 0
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -3152,7 +3221,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "maxzoom": 16,
             "filter": [
@@ -3177,18 +3246,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_city_large_s",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1.5,
-                "text-halo-blur": 0
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -3245,7 +3331,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850752066.192"
+                "mapbox:group": "1444855728283.4546"
             },
             "maxzoom": 16,
             "filter": [
@@ -3270,37 +3356,35 @@ window.mapStyle = {
                 ]
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "place_label_city_large_n",
             "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#fff",
+                "text-color": "#999999",
+                "text-halo-color": "#000",
                 "text-halo-width": 1.5,
-                "text-halo-blur": 0
+                "text-halo-blur": 0,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "place_label",
-            "interactive": true
+            "source-layer": "place_label"
         },
         {
-            "id": "marine_label_point_other",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "Point"
-                ],
-                [
-                    "in",
-                    "labelrank",
-                    4,
-                    5,
-                    6
-                ]
-            ],
+            "interactive": true,
             "layout": {
                 "text-max-width": 8,
                 "visibility": "none",
@@ -3326,19 +3410,9 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666"
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_point_3",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
@@ -3347,11 +3421,40 @@ window.mapStyle = {
                     "Point"
                 ],
                 [
-                    "==",
+                    "in",
                     "labelrank",
-                    3
+                    4,
+                    5,
+                    6
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_point_other",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 8,
                 "visibility": "visible",
@@ -3377,20 +3480,9 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_point_2",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
@@ -3401,9 +3493,36 @@ window.mapStyle = {
                 [
                     "==",
                     "labelrank",
-                    2
+                    3
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_point_3",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 8,
                 "visibility": "visible",
@@ -3429,20 +3548,9 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_point_1",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
@@ -3453,9 +3561,36 @@ window.mapStyle = {
                 [
                     "==",
                     "labelrank",
-                    1
+                    2
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_point_2",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 4,
                 "visibility": "visible",
@@ -3481,35 +3616,49 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_line_other",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
                     "==",
                     "$type",
-                    "LineString"
+                    "Point"
                 ],
                 [
-                    "in",
+                    "==",
                     "labelrank",
-                    4,
-                    5,
-                    6
+                    1
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_point_1",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 15,
                 "visibility": "visible",
@@ -3535,20 +3684,9 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_line_3",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
@@ -3557,11 +3695,40 @@ window.mapStyle = {
                     "LineString"
                 ],
                 [
-                    "==",
+                    "in",
                     "labelrank",
-                    3
+                    4,
+                    5,
+                    6
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_line_other",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 15,
                 "visibility": "visible",
@@ -3587,20 +3754,9 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_line_2",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
@@ -3611,9 +3767,36 @@ window.mapStyle = {
                 [
                     "==",
                     "labelrank",
-                    2
+                    3
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_line_3",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 15,
                 "visibility": "visible",
@@ -3639,20 +3822,9 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
-        },
-        {
-            "id": "marine_label_line_1",
-            "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
-            "source-layer": "marine_label",
             "filter": [
                 "all",
                 [
@@ -3663,9 +3835,36 @@ window.mapStyle = {
                 [
                     "==",
                     "labelrank",
-                    1
+                    2
                 ]
             ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_line_2",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
+        },
+        {
+            "interactive": true,
             "layout": {
                 "text-max-width": 15,
                 "visibility": "visible",
@@ -3691,16 +3890,49 @@ window.mapStyle = {
                     ]
                 }
             },
-            "paint": {
-                "text-color": "#666",
-                "text-opacity": 0.25
-            },
             "metadata": {
-                "mapbox:group": "1444850654682.7075"
+                "mapbox:group": "1444855720231.1272"
             },
-            "interactive": true
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "LineString"
+                ],
+                [
+                    "==",
+                    "labelrank",
+                    1
+                ]
+            ],
+            "type": "symbol",
+            "source": "mapbox",
+            "id": "marine_label_line_1",
+            "paint": {
+                "text-color": "#999999",
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
+            },
+            "source-layer": "marine_label"
         },
         {
+            "interactive": true,
             "minzoom": 3,
             "layout": {
                 "text-transform": "uppercase",
@@ -3739,7 +3971,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850621704.1523"
+                "mapbox:group": "1444855712732.9983"
             },
             "maxzoom": 7,
             "filter": [
@@ -3748,7 +3980,7 @@ window.mapStyle = {
                 80000
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "state-label-lg",
             "paint": {
                 "text-color": {
@@ -3756,19 +3988,36 @@ window.mapStyle = {
                     "stops": [
                         [
                             0,
-                            "#929292"
+                            "#969696"
                         ],
                         [
                             20,
-                            "#929292"
+                            "#969696"
+                        ]
+                    ]
+                },
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
                         ]
                     ]
                 }
             },
-            "source-layer": "state_label",
-            "interactive": true
+            "source-layer": "state_label"
         },
         {
+            "interactive": true,
             "minzoom": 1,
             "layout": {
                 "text-field": "{name_en}",
@@ -3792,7 +4041,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850621704.1523"
+                "mapbox:group": "1444855707128.6584"
             },
             "maxzoom": 10,
             "filter": [
@@ -3801,7 +4050,7 @@ window.mapStyle = {
                 5
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "country-label-sm",
             "paint": {
                 "text-color": {
@@ -3817,14 +4066,31 @@ window.mapStyle = {
                         ]
                     ]
                 },
-                "text-halo-color": "#fff",
+                "text-halo-color": "#000",
                 "text-halo-width": 1,
-                "text-halo-blur": 1
+                "text-halo-blur": 1,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "country_label",
-            "interactive": true
+            "source-layer": "country_label"
         },
         {
+            "interactive": true,
             "minzoom": 1,
             "layout": {
                 "text-field": {
@@ -3860,7 +4126,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850621704.1523"
+                "mapbox:group": "1444855707128.6584"
             },
             "maxzoom": 8,
             "filter": [
@@ -3870,7 +4136,7 @@ window.mapStyle = {
                 4
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "country-label-md",
             "paint": {
                 "text-color": {
@@ -3886,14 +4152,31 @@ window.mapStyle = {
                         ]
                     ]
                 },
-                "text-halo-color": "#fff",
+                "text-halo-color": "#000",
                 "text-halo-width": 1,
-                "text-halo-blur": 1
+                "text-halo-blur": 1,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "country_label",
-            "interactive": true
+            "source-layer": "country_label"
         },
         {
+            "interactive": true,
             "layout": {
                 "text-field": "{name_en}",
                 "text-font": [
@@ -3916,7 +4199,7 @@ window.mapStyle = {
                 }
             },
             "metadata": {
-                "mapbox:group": "1444850621704.1523"
+                "mapbox:group": "1444855707128.6584"
             },
             "maxzoom": 12,
             "filter": [
@@ -3926,7 +4209,7 @@ window.mapStyle = {
                 2
             ],
             "type": "symbol",
-            "source": "mapbox://mapbox.mapbox-streets-v6",
+            "source": "mapbox",
             "id": "country-label-lg",
             "paint": {
                 "text-color": {
@@ -3934,25 +4217,41 @@ window.mapStyle = {
                     "stops": [
                         [
                             0,
-                            "#444"
+                            "#666"
                         ],
                         [
                             10,
-                            "#888"
+                            "#999"
                         ]
                     ]
                 },
-                "text-halo-color": "#fff",
+                "text-halo-color": "#000",
                 "text-halo-width": 1,
-                "text-halo-blur": 1
+                "text-halo-blur": 1,
+                "text-opacity": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            3,
+                            0
+                        ],
+                        [
+                            6,
+                            1
+                        ],
+                        [
+                            13,
+                            1
+                        ]
+                    ]
+                }
             },
-            "source-layer": "country_label",
-            "interactive": true
+            "source-layer": "country_label"
         }
     ],
-    "created": "2016-02-04T12:29:44.712Z",
-    "id": "cik88q3qy00k99um6q4jyofwh",
-    "modified": "2016-02-04T12:29:44.712Z",
+    "created": "2016-02-06T15:48:44.633Z",
+    "id": "cikbappzb006hb8m9mp9ablwi",
+    "modified": "2016-02-06T15:51:55.711Z",
     "owner": "mateogianolio",
     "draft": false
 }
