@@ -38,9 +38,9 @@
         ['<', 'mag', magnitude + 2.5]
       ];
       options.paint = {
-        'circle-radius': 1.75 * magnitude,
+        'circle-radius': magnitude < 1 ? 2.5 : 2.5 * magnitude,
         'circle-color': colors[i],
-        'circle-opacity': magnitude / 12,
+        'circle-opacity': 0.2,
       };
       map.addLayer(options);
     }
