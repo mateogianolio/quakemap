@@ -17,8 +17,8 @@
         width: 100%;
         max-width: 400px;
         position: absolute;
-        bottom: 10%;
-        left: 10%;
+        bottom: 5%;
+        left: 5%;
         padding: 30px 15px;
       }
 
@@ -32,6 +32,7 @@
 
         #box>h1 { font-size: 24px !important; }
         #box>p { font-size: 14px !important; }
+        #box>#extra { display: none; }
       }
 
       #box>h1 {
@@ -70,12 +71,10 @@
     <div id="map"></div>
     <div id="box">
       <h1>
-        Global<br>
-        earthquake<br>
-        heatmap
+        Global earthquake heatmap
       </h1>
       <h2 id="time"></h2>
-      <p>
+      <p id="extra">
         A heatmap synchronously accumulating <strong>50 years</strong> of earthquake data (February 1966 to February 2016)
         directly from <a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/index.php">USGS</a>.
       </p>
