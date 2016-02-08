@@ -11,12 +11,12 @@
   window.heat = L
     .heatLayer([], {
       maxZoom: 3,
-      radius: 3,
-      blur: 6,
+      radius: 4,
+      blur: 9,
       gradient: {
-        '0': '#4CAF50',
-        '0.5': '#FFEB3B',
-        '0.8': '#F44336'
+        '0.3': '#009688',
+        '0.6': '#FFC107',
+        '0.9': '#B71C1C'
       }
     })
     .addTo(map);
@@ -58,7 +58,6 @@
                         'July', 'August', 'September', 'October', 'November',
                         'December'];
           document.getElementById('time').innerHTML =
-            '<img id="loader" src="loader.gif" alt="Loading..." title="Loading..."> ' +
             months[time.getMonth()] + ' ' + time.getFullYear() + ' ' +
             '(' + window.quakes + ' total)';
         });

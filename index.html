@@ -9,6 +9,9 @@
     <script src="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.3/leaflet-heat.js'></script>
 
+    <script src="https://use.typekit.net/qmn5yds.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <link href="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="map.css">
 
@@ -22,6 +25,36 @@
         padding: 30px 15px;
       }
 
+      #box>h1 {
+        font-family: 'adelle', 'Georgia', serif;
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #fff8f0;
+        text-shadow: 0 1px 2px #009688;
+      }
+
+      #box>h2 {
+        font-family: 'jubilat', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        color: #009688;
+        margin-bottom: 15px;
+        text-shadow: 0 1px 1px #fff;
+      }
+
+      #box>p {
+        font-family: 'jubilat', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #00695C;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #004D40;
+        font-weight: bold;
+      }
+
       @media (max-width: 960px) {
         #box {
           width: 90%;
@@ -30,39 +63,10 @@
           bottom: 0;
         }
 
-        #box>h1 { font-size: 24px !important; }
-        #box>p { font-size: 14px !important; }
+        #box>h1 { font-size: 24px; }
+        #box>h2 { font-size: 16px; }
+        #box>p { font-size: 14px; }
         #box>#extra { display: none; }
-      }
-
-      #box>h1 {
-        font-family: 'Georgia', serif;
-        font-size: 32px;
-        margin-bottom: 15px;
-        color: #fff8f0;
-        text-shadow: 0 1px 3px #004D40;
-      }
-
-      #box>h2 {
-        font-family: 'Georgia', serif;
-        font-weight: normal;
-        font-size: 20px;
-        color: #004D40;
-        margin-bottom: 15px;
-        opacity: 0.75;
-      }
-
-      #box>p {
-        font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        color: #004D40;
-        margin-bottom: 15px;
-      }
-
-      a {
-        color: #004D40;
-        font-weight: bold;
       }
     </style>
   </head>
@@ -74,7 +78,7 @@
       </h1>
       <h2 id="time"></h2>
       <p id="extra">
-        A heatmap synchronously accumulating <strong>50 years</strong> of earthquake data (February 1966 to February 2016)
+        A heatmap synchronously accumulating <strong>30 years</strong> of earthquake data (February 1986 to February 2016)
         directly from <a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/index.php">USGS</a>.
       </p>
       <p>
@@ -86,12 +90,12 @@
     <script>
       document.addEventListener('click', function () {
         window.pause = !window.pause;
-        if (window.pause)
-          document.getElementById('loader').style.display = 'none';
-        else {
-          traverse(new Date('1966-02-01'));
-          document.getElementById('loader').style.display = 'inline-block';
+        if (window.pause) {
+          window.quakes = 0;
+          heat.setLatLngs([]);
+          document.getElementById('time').innerHTML = '';
         }
+          traverse(new Date('1986-02-01'));
       });
     </script>
   </body>
