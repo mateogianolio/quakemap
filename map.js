@@ -12,11 +12,11 @@
     .heatLayer([], {
       maxZoom: 3,
       radius: 3,
-      blur: 9,
+      blur: 8,
       gradient: {
-        '0.3': '#009688',
-        '0.6': '#FFC107',
-        '0.9': '#B71C1C'
+        '0.2': '#009688',
+        '0.5': '#FFC107',
+        '0.8': '#B71C1C'
       }
     })
     .addTo(map);
