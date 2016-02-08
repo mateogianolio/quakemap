@@ -3,92 +3,69 @@
 <html>
   <head>
     <title>QuakeMap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.js'></script>
-    <script src="style.js"></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.css' rel='stylesheet' />
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <script src="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.3/leaflet-heat.js'></script>
+
+    <link href="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="map.css">
+
     <style>
-      html {
+      #box {
         width: 100%;
-        height: 100%;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        background: #d6d6d6;
-        font: 100%/1.5 'Helvetica Neue', sans-serif;
-      }
-
-      #info {
-        max-width: 800px;
-        position: absolute;
-        font-size: 0.8rem;
-        color: #fff;
-        padding: 0 15px 15px 15px;
-        z-index: 999;
-        font-size: 11px;
-        opacity: 0.5;
-        bottom: 0;
-      }
-
-      #info a {
-        color: #fff;
-        font-weight: bold;
-      }
-
-      #map {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-      }
-
-      .mapboxgl-popup-content {
-        background: rgba(255, 255, 255, 0.6);
-        font-size: 12px;
-        padding: 10px;
-      }
-
-      .mapboxgl-popup-tip {
-        opacity: 0.6;
-      }
-
-      .mapboxgl-popup {
         max-width: 400px;
-        font-size: 12px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 30px 15px;
+      }
+
+      #box>h1 {
+        font-family: 'Georgia', serif;
+        font-size: 48px;
+        margin: 0;
+        line-height: 1;
+        color: #fff8f0;
+        text-shadow: 0 1px 2px #004D40;
+      }
+
+      #box>h2 {
+        font-weight: normal;
+        color: rgba(0, 0, 0, .8);
+      }
+
+      #box>p {
+        font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #004D40;
       }
     </style>
-    <script>
-      function f(stop, duration) {
-        stop = stop || (new Date());
-        var start = new Date(stop - 1000 * 60 * 60 * 24 * duration);
-
-        var end = stop.getFullYear() + '-' + (stop.getMonth() + 1) + '-' + stop.getDate(),
-            begin = start.getFullYear() + '-' + (start.getMonth() + 1) + '-' + start.getDate();
-
-        window.location.href = '?starttime=' + begin + '&endtime=' + end;
-      }
-    </script>
   </head>
   <body>
-    <div id="info">
-      <h3>QuakeMap</h3>
+    <div id="map"></div>
+    <div id="box">
+      <h1>Global earthquake heatmap</h1>
+      <h2 id="time"></h2>
       <p>
-        A map of earthquakes in the world the last 30 days,
-        fetched from USGS and colored and scaled by magnitude.<br>
-        Earthquake alerts (green, yellow, orange, red) are
-        represented as animated markers.<br>
-        Mouse over the markers for more information.
+        A heatmap synchronously accumulating <strong>50 years</strong> of earthquake data (February 1966 to February 2016) directly from United States Geological Survey (USGS).
       </p>
       <p>
-        <a href="#" onclick="f(new Date(), 1)">last 24 hours</a> -
-        <a href="#" onclick="f(new Date(), 7)">last 7 days</a> -
-        <a href="#" onclick="f(new Date(), 30)">last 30 days</a><br>
-        <a href="#" onclick="f(new Date('2015-04-26'), 1)">Nepal Earthquake (25 April, 2015)</a>
+        <strong>Click anywhere</strong> to run, click again to reset. This demo is limited to 2 requests per second to be nice to USGS servers.
       </p>
     </div>
-    <div id="map"></div>
     <script src="map.js"></script>
+    <script>
+      document.addEventListener('click', function () {
+        window.pause = !window.pause;
+        if (window.pause) {
+          heat.setLatLngs([]);
+          document.getElementById('time').innerHTML = '';
+        } else
+          traverse(new Date('1966-02-01'));
+      });
+    </script>
   </body>
 </html>
