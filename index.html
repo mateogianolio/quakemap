@@ -17,23 +17,38 @@
         width: 100%;
         max-width: 400px;
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 10%;
+        left: 10%;
         padding: 30px 15px;
+      }
+
+      @media (max-width: 960px) {
+        #box {
+          width: 90%;
+          max-width: 90%;
+          left: 0;
+          bottom: 0;
+        }
+
+        #box>h1 { font-size: 24px !important; }
+        #box>p { font-size: 14px !important; }
       }
 
       #box>h1 {
         font-family: 'Georgia', serif;
-        font-size: 48px;
-        margin: 0;
-        line-height: 1;
+        font-size: 32px;
+        margin-bottom: 15px;
         color: #fff8f0;
-        text-shadow: 0 1px 2px #004D40;
+        text-shadow: 0 1px 3px #004D40;
       }
 
       #box>h2 {
+        font-family: 'Georgia', serif;
         font-weight: normal;
-        color: rgba(0, 0, 0, .8);
+        font-size: 20px;
+        color: #004D40;
+        margin-bottom: 15px;
+        opacity: 0.75;
       }
 
       #box>p {
@@ -41,30 +56,44 @@
         font-size: 16px;
         line-height: 1.5;
         color: #004D40;
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #004D40;
+        font-weight: bold;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <div id="map"></div>
     <div id="box">
-      <h1>Global earthquake heatmap</h1>
+      <h1>
+        Global<br>
+        earthquake<br>
+        heatmap
+      </h1>
       <h2 id="time"></h2>
       <p>
-        A heatmap synchronously accumulating <strong>50 years</strong> of earthquake data (February 1966 to February 2016) directly from United States Geological Survey (USGS).
+        A heatmap synchronously accumulating <strong>50 years</strong> of earthquake data (February 1966 to February 2016)
+        directly from <a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/index.php">USGS</a>.
       </p>
       <p>
-        <strong>Click anywhere</strong> to run, click again to reset. This demo is limited to 2 requests per second to be nice to USGS servers.
+        <strong>Click anywhere</strong> to run, click again to pause. Limited to 2 requests/sec to be nice to USGS servers.
       </p>
+      <p>&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>.</p>
     </div>
     <script src="map.js"></script>
     <script>
       document.addEventListener('click', function () {
         window.pause = !window.pause;
-        if (window.pause) {
-          heat.setLatLngs([]);
-          document.getElementById('time').innerHTML = '';
-        } else
+        if (window.pause)
+          document.getElementById('loader').style.display = 'none';
+        else {
           traverse(new Date('1966-02-01'));
+          document.getElementById('loader').style.display = 'inline-block';
+        }
       });
     </script>
   </body>
