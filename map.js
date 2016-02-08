@@ -11,7 +11,7 @@
   window.heat = L
     .heatLayer([], {
       maxZoom: 3,
-      radius: 5,
+      radius: 4,
       blur: 9,
       gradient: {
         '0.3': '#009688',
