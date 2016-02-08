@@ -58,12 +58,12 @@
                         'July', 'August', 'September', 'October', 'November',
                         'December'];
           document.getElementById('time').innerHTML =
-            '<img id="loader" src="loader.gif" alt="Loading... " title="Loading... "> ' +
+            '<img id="loader" src="loader.gif" alt="Loading..." title="Loading..."> ' +
             months[time.getMonth()] + ' ' + time.getFullYear() + ' ' +
             '(' + window.quakes + ' total)';
         });
 
-        setTimeout(traverse.bind(null, end), 500);
+        setTimeout(traverse.bind(null, end), 1000);
       });
   };
 }());
