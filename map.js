@@ -4,19 +4,19 @@
   L.mapbox.accessToken = 'pk.eyJ1IjoibWF0ZW9naWFub2xpbyIsImEiOiJjaWs2MzRrcmMwMDRndnJrc2tibTZmeW8xIn0.-HNhp-sfXXy3DnCdgsNtpQ';
   var map = L.mapbox
     .map('map', 'mateogianolio.64d36a05')
-    .setView([45, 0], 3);
+    .setView([30, 0], 3);
 
   map.zoomControl.removeFrom(map);
 
   window.heat = L
     .heatLayer([], {
       maxZoom: 3,
-      radius: 3,
-      blur: 8,
+      radius: 5,
+      blur: 9,
       gradient: {
-        '0.2': '#009688',
-        '0.5': '#FFC107',
-        '0.8': '#B71C1C'
+        '0.3': '#009688',
+        '0.7': '#FFC107',
+        '0.9': '#B71C1C'
       }
     })
     .addTo(map);
