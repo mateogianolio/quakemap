@@ -6,17 +6,15 @@
     .map('map', 'mateogianolio.64d36a05')
     .setView([30, 0], 3);
 
-  map.zoomControl.removeFrom(map);
-
   window.heat = L
     .heatLayer([], {
       maxZoom: 3,
-      radius: 4,
-      blur: 9,
+      radius: 2,
+      blur: 3,
       gradient: {
-        '0.3': '#009688',
-        '0.7': '#FFC107',
-        '0.9': '#B71C1C'
+        '0.2': '#009688',
+        '0.5': '#FFC107',
+        '0.9': '#F44336'
       }
     })
     .addTo(map);
