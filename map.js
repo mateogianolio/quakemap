@@ -6,6 +6,9 @@
     .map('map', 'mateogianolio.64d36a05')
     .setView([30, 0], 2);
 
+  map.zoomControl.removeFrom(map);
+  L.control.fullscreen().addTo(map);
+
   window.heat = L
     .heatLayer([], {
       maxZoom: 2,
