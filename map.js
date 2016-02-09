@@ -4,13 +4,13 @@
   L.mapbox.accessToken = 'pk.eyJ1IjoibWF0ZW9naWFub2xpbyIsImEiOiJjaWs2MzRrcmMwMDRndnJrc2tibTZmeW8xIn0.-HNhp-sfXXy3DnCdgsNtpQ';
   var map = L.mapbox
     .map('map', 'mateogianolio.64d36a05')
-    .setView([30, 0], 3);
+    .setView([30, 0], 2);
 
   window.heat = L
     .heatLayer([], {
-      maxZoom: 3,
+      maxZoom: 2,
       radius: 2,
-      blur: 3,
+      blur: 4,
       gradient: {
         '0.2': '#009688',
         '0.5': '#FFC107',
